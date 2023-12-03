@@ -2,7 +2,7 @@
     controllerName="sap.ui.demo/walkthrough.controller.App"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
-    <Button text="Say Hi" press=".onShowHellow" />
+    <Button text="{i18n>showHellowButtonText}" press=".onShowHellow" />
     <Input value="{/recipient/name}"
         description="Hellow {/recipient/name}"
         valueLiveUpdate="true"
