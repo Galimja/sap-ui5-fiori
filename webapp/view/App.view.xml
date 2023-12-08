@@ -1,8 +1,26 @@
 <mvc:View
     controllerName="sap.ui.demo/walkthrough.controller.App"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc">
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
     <Button text="{i18n>showHellowButtonText}" press=".onShowHellow" />
+    <App>
+        <pages>
+            <Page title="{i18n>homePageTitle}">
+                <content>
+                    <Panel headerText="{i18n>helloPanelTitile}">
+                        <content>
+                            <Input
+                                value="{/recipient/name}"
+                                description="Hello {/recipient/name }"
+                                valueLiveUpdate="true"
+                                width="60%" />
+                        </content>
+                    </Panel>
+                </content>
+            </Page>
+        </pages>
+    </App>
     <Input value="{/recipient/name}"
         description="Hellow {/recipient/name}"
         valueLiveUpdate="true"
