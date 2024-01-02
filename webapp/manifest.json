@@ -48,10 +48,14 @@
     },
     "sap.ui5": {
         "resources": {
+            "js": [
+                {
+                    "uri": "<uri>"
+                }
+            ],
             "css": [
                 {
-                    "uri": "<uri>",
-                    "id": "<id>"
+                    "uri": "css/style.css"
                 }
             ]
         },
